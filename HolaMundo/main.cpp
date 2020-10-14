@@ -4,7 +4,6 @@
 
 int main() 
 {
-
 	//console output
 	/*Esta es un comentario
 	* en varias
@@ -15,5 +14,5 @@ int main()
 	std::cout << "\nCarrera: Ing. en Sistemas Comp.\n";
 
 	_getch();
-	return 0;
+	//return 0;
 }

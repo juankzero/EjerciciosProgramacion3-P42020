@@ -1,6 +1,7 @@
 
 #include "Racional.h"
 #include <iostream>
+#include <cmath>
 
 using std::cout;
 
@@ -8,7 +9,9 @@ Racional::Racional() : numerador(1), denominador(1)
 {}
 
 Racional::Racional(int _num, int _den) : numerador(_num), denominador(_den)
-{}
+{
+	simplificar();
+}
 
 void Racional::imprimirRacional() // 3/4
 {
@@ -49,8 +52,54 @@ Racional Racional::suma(Racional r2)
 	//cuando ambos denominadores sean iguales
 	if (this->denominador == r2.denominador)
 		return Racional(this->numerador + r2.numerador, r2.denominador);
+	else
+		return Racional((this->numerador * r2.denominador) + (r2.numerador * this->denominador), 
+						this->denominador * r2.denominador);
+}
 
-	return Racional();
+Racional Racional::resta(Racional r2) 
+{
+	//cuando ambos denominadores sean iguales
+	if (this->denominador == r2.denominador)
+		return Racional(this->numerador - r2.numerador, r2.denominador);
+	else
+		return Racional((this->numerador * r2.denominador) - (r2.numerador * this->denominador),
+			this->denominador * r2.denominador);
+}
 
+void Racional::simplificar() 
+{
+	int mayor = numerador > denominador ? numerador : denominador;
+
+	for (int i = 2; i <= mayor; i++) 
+	{
+		if (numerador % i == 0 && denominador % i == 0)
+		{
+			numerador = numerador / i;
+			denominador = denominador / i;
+
+			i = 1;
+		}
+	}
+}
+
+Racional Racional::multiplicacion(Racional r2) 
+{
+	
+	return Racional(this->numerador * r2.numerador, this->denominador * r2.denominador);
+
+}
+
+Racional Racional::division(Racional r2) 
+{
+
+	return Racional(this->numerador * r2.denominador, this->denominador * r2.numerador);
+
+}
+
+Racional Racional::potencia(int exponente) 
+{
+
+	return Racional( pow(this->numerador, exponente), pow(this->denominador, exponente) );
 
 }

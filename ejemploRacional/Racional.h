@@ -12,7 +12,11 @@ public:
 	void imprimirRacional(); // 17/6
 	void imprimirDecimal();  // 2.8333
 
-	Racional suma(Racional r2);
+	Racional suma(Racional);
+	Racional resta(Racional);
+	Racional multiplicacion(Racional);
+	Racional division(Racional);
+	Racional potencia(int);
 
 private:
 	int numerador, denominador;

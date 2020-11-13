@@ -6,11 +6,15 @@
 #include "CuentaAhorros.h"
 #include "CuentaCheques.h"
 
+#include <vector>
+
 using namespace std;
 
 int main()
 {
-	Cuenta cuenta1(50.0); 
+	vector<Cuenta> cuentas;
+
+	Cuenta cuenta1("CT-001",50.0); 
 	CuentaAhorros cuenta2(25.0, .03); 
 	CuentaCheques cuenta3(80.0, 1.0); 
 

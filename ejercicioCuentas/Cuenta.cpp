@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Cuenta::Cuenta(double saldoInicial) : saldo(0)
+Cuenta::Cuenta(string numeroCuenta, double saldoInicial) : saldo(0)
 {
 	if (saldoInicial >= 0)
 		saldo = saldoInicial;

@@ -35,6 +35,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ejercicioCadenas", "ejercic
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ejemploCadena", "ejemploCadena\ejemploCadena.vcxproj", "{DDE6DE7E-6537-4EF7-9C6B-8E311FF4C034}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semana6", "Semana6", "{91E042BD-4652-491A-BBDD-05B21AFC48E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ejemploApuntadores", "ejemploApuntadores\ejemploApuntadores.vcxproj", "{F35B2615-AE4F-4793-951F-2AA8376120F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +135,14 @@ Global
 		{DDE6DE7E-6537-4EF7-9C6B-8E311FF4C034}.Release|x64.Build.0 = Release|x64
 		{DDE6DE7E-6537-4EF7-9C6B-8E311FF4C034}.Release|x86.ActiveCfg = Release|Win32
 		{DDE6DE7E-6537-4EF7-9C6B-8E311FF4C034}.Release|x86.Build.0 = Release|Win32
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Debug|x64.ActiveCfg = Debug|x64
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Debug|x64.Build.0 = Debug|x64
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Debug|x86.ActiveCfg = Debug|Win32
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Debug|x86.Build.0 = Debug|Win32
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Release|x64.ActiveCfg = Release|x64
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Release|x64.Build.0 = Release|x64
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Release|x86.ActiveCfg = Release|Win32
+		{F35B2615-AE4F-4793-951F-2AA8376120F8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +159,7 @@ Global
 		{042F5640-1732-4BD9-A923-A294D6970350} = {D762169C-A654-4F35-9ADB-482166CD2805}
 		{CFEB7B7D-FD13-443C-838E-275D232ACF9F} = {AC9B2EAD-7AF4-4865-B354-7B49C70C8011}
 		{DDE6DE7E-6537-4EF7-9C6B-8E311FF4C034} = {AC9B2EAD-7AF4-4865-B354-7B49C70C8011}
+		{F35B2615-AE4F-4793-951F-2AA8376120F8} = {91E042BD-4652-491A-BBDD-05B21AFC48E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A591350-2629-4507-A3C1-40513C527312}

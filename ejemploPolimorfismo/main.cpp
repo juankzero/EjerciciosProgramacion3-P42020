@@ -64,7 +64,7 @@ int main()
 	* y su altura + 2
 	*/
 
-	//determine con codigo cuentos instancias de TrianguloRectangulo existen
+	//determine con codigo cuentas instancias de TrianguloRectangulo existen
 
 	int cantidadTR = 0;
 	for (int i = 0; i < 4; i++) 

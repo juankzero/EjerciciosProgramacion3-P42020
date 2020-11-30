@@ -10,8 +10,9 @@ class ListaCircular
 public:
 	ListaCircular();
 	void agregarNodo(const char*);
-	void eliminarNodo(char*);
+	void eliminarNodo(const char*);
 	void imprimirLista();
+	void imprimirListaReversa();
 
 private:
 	Nodo* primero;

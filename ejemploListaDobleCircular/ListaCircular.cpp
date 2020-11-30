@@ -55,3 +55,57 @@ void ListaCircular::imprimirLista()
 	cout << std::endl;
 
 }
+
+void ListaCircular::imprimirListaReversa() 
+{
+	if (estaVacia())
+		return;
+
+	Nodo* actual = ultimo;
+
+	do 
+	{
+		cout << "[ " << actual->getValor() << " ] ";
+		actual = actual->getAnterior();
+	} while (actual != ultimo);
+
+	cout << "\n";
+}
+
+void ListaCircular::eliminarNodo(const char* _valor) 
+{
+	if (estaVacia())
+		return;
+
+	Nodo* actual = primero;
+
+	do 
+	{
+		if (strcmp(actual->getValor(), _valor) == 0) // las cadenas son iguales
+		{
+			if (actual == primero)
+			{
+				primero = actual->getSiguiente();
+				primero->setAnterior(ultimo);
+				ultimo->setSiguiente(primero);
+			}
+			else if (actual == ultimo) 
+			{
+				ultimo = ultimo->getAnterior();
+				ultimo->setSiguiente(primero);
+				primero->setAnterior(ultimo);
+			}
+			else //eliminacion en medio
+			{
+				actual->getAnterior()->setSiguiente(actual->getSiguiente());
+				actual->getSiguiente()->setAnterior(actual->getAnterior());
+			}
+
+			delete actual;
+			return;
+		}
+		actual = actual->getSiguiente();
+	} while (actual != primero);
+
+
+}
